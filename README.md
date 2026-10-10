@@ -59,7 +59,7 @@ Each website has its own structure, so each gets its own notebook:
 - **Static sites** → `requests` + `BeautifulSoup`.
 - **Dynamic sites** → `Selenium` with a Chrome WebDriver (pop-ups, "load more" buttons, pagination).
 - **PDF notices** (Annexure J) → downloaded and parsed with `PyMuPDF` to extract dates.
-- **Translation** of French titles to English with `deep-translator`, relative dates (EXAMPLE: "posted 2 weeks ago") converted to real dates, **expired notices skipped**.
+- **Translation** of English titles to French with `deep-translator`, relative dates (EXAMPLE: "posted 2 weeks ago") converted to real dates, **expired notices skipped**.
 - Output: one `.xlsx` per source in `2_scraped_files/`.
 
 ### 2️⃣ Data preparation – `3_cleaning/cleaning.ipynb`
@@ -87,7 +87,7 @@ The company defines **six target categories**, each with its own keyword set:
 ### 4️⃣ Model training & selection – `4_classification/`
 Two pretrained transformer models were compared:
 
-| | **CamemBERT** ✅ | **MPNet v2 (SetFit)** |
+| | **CamemBERT**  | **MPNet v2 (SetFit)** |
 |---|---|---|
 | Base model | `camembert-base` (RoBERTa trained on French OSCAR) | `paraphrase-mpnet-base-v2` |
 | Why | Scraped titles are mostly French | Unifies MLM + PLM, strong semantic embeddings |
@@ -120,12 +120,12 @@ Both models were trained on the labelled + AI-augmented title dataset (6 balance
 
 | Model | Train / test titles | Accuracy | Precision | Recall | F1-score |
 |---|---|---|---|---|---|
-| **CamemBERT** ✅ (selected) | 8,113 / 2,029 | **0.8773** | **0.8781** | **0.8773** | **0.8775** |
+| **CamemBERT** (selected) | 8,113 / 2,029 | **0.8773** | **0.8781** | **0.8773** | **0.8775** |
 | MPNet v2 (SetFit) | 7,182 / 1,796 | 0.8552 | 0.8545 | 0.8552 | 0.8542 |
 
 Precision, recall and F1 are weighted averages. CamemBERT scores about 2 points higher on every metric, so it is the deployed model. The two test sets are different splits (the MPNet run used a slightly smaller dataset), so the comparison is indicative.
 
-### CamemBERT – classification report (test set, 2,029 titles)
+### CamemBERT – classification report
 
 | Category | Precision | Recall | F1-score | Support |
 |---|---|---|---|---|
