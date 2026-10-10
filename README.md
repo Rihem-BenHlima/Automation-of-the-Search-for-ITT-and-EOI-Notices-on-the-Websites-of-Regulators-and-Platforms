@@ -1,5 +1,4 @@
-# 🔎 Automation of the Search for ITT and EOI Notices
-### on the Websites of Regulators and National/International Platforms
+# 🔎 Automation of the Search for ITT and EOI Notices on the Websites of Regulators and National/International Platforms
 
 🎓 *Developed during a summer internship.*
 
