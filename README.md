@@ -198,7 +198,7 @@ In VS Code / Jupyter, select the GPU kernel (`torchgpu`) before running the trai
 ## ⚖️ Responsible scraping
 
 - Only publicly available procurement notices are collected.
-- Respect each website's terms of use and `robots.txt`. At the time of writing, none of the sources' `robots.txt` files disallowed the scraped pages. `dgmp.gouv.ml` (Mali) asks for a **10-second crawl delay**, and dgMarket is a commercial aggregator whose terms should be checked before use.
+- Respect each website's terms of use and `robots.txt`. At the time of writing, none of the sources' `robots.txt` files disallowed the scraped pages.
 - Keep delays between requests and do not overload the servers.
 - Scraped data may contain contact details, so do not redistribute it without checking the source's terms.
 
