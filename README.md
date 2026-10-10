@@ -208,9 +208,9 @@ In VS Code / Jupyter, select the GPU kernel (`torchgpu`) before running the trai
 
 | Area | Tools |
 |---|---|
-| Scraping | Selenium, BeautifulSoup, Requests |
-| Processing | Pandas, NumPy, ftfy |
-| Documents | PyMuPDF, Pillow, pytesseract |
-| NLP / ML | Hugging Face Transformers, SetFit, scikit-learn, PyTorch (GPU) |
-| Deployment | Streamlit, Plotly |
-| Environment | Python in VS Code with Jupyter |
+| 🕷️ Scraping | Selenium, BeautifulSoup, Requests |
+| 🧹 Processing | Pandas, NumPy, ftfy |
+| 📄 Documents | PyMuPDF, Pillow, pytesseract |
+| 🧠 NLP / ML | Hugging Face Transformers, SetFit, scikit-learn, PyTorch (GPU) |
+| 🚀 Deployment | Streamlit, Plotly |
+| 💻 Environment | Python in VS Code with Jupyter |
