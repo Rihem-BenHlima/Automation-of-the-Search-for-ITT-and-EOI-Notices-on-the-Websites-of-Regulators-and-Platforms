@@ -135,9 +135,6 @@ Precision, recall and F1 are weighted averages. CamemBERT scores about 2 points 
 | IT Infrastructure | 0.79 | 0.81 | 0.80 | 412 |
 | Digital Tools and Solutions | 0.84 | 0.86 | 0.85 | 340 |
 | Telecom | 0.88 | 0.86 | 0.87 | 318 |
-| **Accuracy** | | | **0.88** | 2,029 |
-| Macro avg | 0.88 | 0.88 | 0.88 | 2,029 |
-| Weighted avg | 0.88 | 0.88 | 0.88 | 2,029 |
 
 ### CamemBERT – confusion matrix (rows = true class, columns = predicted)
 
