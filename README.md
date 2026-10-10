@@ -59,7 +59,7 @@ Each website has its own structure, so each gets its own notebook:
 - **Static sites** → `requests` + `BeautifulSoup`.
 - **Dynamic sites** → `Selenium` with a Chrome WebDriver (pop-ups, "load more" buttons, pagination).
 - **PDF notices** (Annexure J) → downloaded and parsed with `PyMuPDF` to extract dates.
-- **Translation** of English titles to French with `deep-translator`, relative dates ("posted 2 weeks ago") converted to real dates, **expired notices skipped**.
+- **Translation** of French titles to English with `deep-translator`, relative dates (EXAMPLE: "posted 2 weeks ago") converted to real dates, **expired notices skipped**.
 - Output: one `.xlsx` per source in `2_scraped_files/`.
 
 ### 2️⃣ Data preparation – `3_cleaning/cleaning.ipynb`
